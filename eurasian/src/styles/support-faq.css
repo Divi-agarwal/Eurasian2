@@ -1,0 +1,52 @@
+.support-faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;           /* space-y-12 */
+  padding-top: 2rem;   /* py-8 */
+  padding-bottom: 2rem;
+}
+
+.support-faq-section-center {
+  text-align: center;
+}
+
+.support-faq-title {
+  font-size: 2.25rem;  /* text-4xl */
+  font-weight: bold;
+  font-family: var(--font-headline, 'Noto Serif', serif);
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.support-faq-description {
+  font-size: 1.25rem;  /* text-xl */
+  color: var(--muted-foreground, white);
+  max-width: 42rem;    /* max-w-2xl */
+  margin-left: auto;   /* mx-auto */
+  margin-right: auto;
+}
+
+.support-faq-accordion-section {
+  max-width: 48rem;    /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support-faq-accordion {
+  width: 100%;
+}
+
+.support-faq-trigger {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;    /* font-semibold */
+  text-align: left;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.support-faq-trigger:hover {
+  color: hsl(var(--foreground, 220 15% 25%));
+}
+
+.support-faq-content {
+  font-size: 1rem;     /* text-base */
+  color: rgba(255, 255, 255, 0.8); /* text-foreground/80 */
+}

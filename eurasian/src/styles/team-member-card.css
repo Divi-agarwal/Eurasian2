@@ -1,0 +1,115 @@
+.team-card {
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border-radius: 1.2rem;
+  transition: box-shadow 0.3s;
+  background: #18181b;
+  min-width: 260px;
+  max-width: 340px;
+  margin: 0 auto;
+  border: 5px solid rgb(6, 6, 2) !important;
+  gap: 0.4rem;
+}
+.team-card:hover {
+  box-shadow: 0 10px 52px rgba(3, 190, 237, 0.941);
+}
+
+.team-card-header {
+  padding-bottom: 0.5rem;
+}
+
+.team-card-img {
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  border: 4px solid #00ffae33;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+}
+
+.team-card-title {
+  font-family: var(--font-headline, 'Noto Serif', serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #e5e5e5;
+}
+
+.team-card-role {
+  color: var(--primary, #00ffae);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card-role-icon {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.3em;
+}
+
+.team-card-content {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.team-card-bio {
+  color: #b5b5b5;
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.team-card-expertise {
+  margin-bottom: 1rem;
+}
+
+.team-card-expertise-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #e5e5e5;
+}
+
+.team-card-expertise-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.team-card-skill {
+  font-size: 0.85rem;
+  background: var(--secondary, #23272f);
+  color: var(--secondary-foreground, #00ffae);
+  padding: 0.25em 0.8em;
+  border-radius: 999px;
+  margin-bottom: 0.2em;
+}
+
+.team-card-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.team-card-social-link {
+  color: #a1a1aa;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+.team-card-social-link:hover {
+  color: var(--primary, #00ffae);
+}
+
+.team-card-social-icon {
+  width: 2em;
+  height: 2em;
+}

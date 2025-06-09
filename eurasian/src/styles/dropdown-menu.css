@@ -1,0 +1,124 @@
+/* Dropdown Menu Styles */
+/* General dropdown menu styles */
+.dropdown-menu-content,
+.dropdown-menu-sub-content {
+  z-index: 50;
+  min-width: 8rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border, #222);
+  background: var(--popover, #222);
+  color: var(--popover-foreground, #fff);
+  padding: 0.25rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  /* Add animation classes as needed */
+}
+
+/* Dropdown menu trigger and items */
+.dropdown-menu-trigger,
+.dropdown-menu-item,
+.dropdown-menu-sub-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu-item:focus,
+.dropdown-menu-item:active,
+.dropdown-menu-sub-trigger:focus,
+.dropdown-menu-sub-trigger:active {
+  background: var(--accent, #00ffae);
+  color: var(--accent-foreground, #000);
+}
+
+.dropdown-menu-item[aria-disabled="true"],
+.dropdown-menu-sub-trigger[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dropdown-menu-item .icon,
+.dropdown-menu-sub-trigger .icon {
+  pointer-events: none;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* Inset for submenus and labels */
+.dropdown-menu-item.inset,
+.dropdown-menu-label.inset,
+.dropdown-menu-sub-trigger.inset {
+  padding-left: 2rem;
+}
+
+/* Checkbox and radio items */
+.dropdown-menu-checkbox-item,
+.dropdown-menu-radio-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem 0.375rem 2rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu-checkbox-item:focus,
+.dropdown-menu-radio-item:focus {
+  background: var(--accent, #00ffae);
+  color: var(--accent-foreground, #000);
+}
+
+.dropdown-menu-checkbox-item[aria-disabled="true"],
+.dropdown-menu-radio-item[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dropdown-menu-checkbox-indicator,
+.dropdown-menu-radio-indicator {
+  position: absolute;
+  left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.dropdown-menu-checkbox-indicator .icon,
+.dropdown-menu-radio-indicator .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Label */
+.dropdown-menu-label {
+  padding: 0.375rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Separator */
+.dropdown-menu-separator {
+  margin: 0.25rem 0;
+  height: 1px;
+  background: var(--muted, #444);
+}
+
+/* Shortcut */
+.dropdown-menu-shortcut {
+  margin-left: auto;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
